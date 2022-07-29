@@ -153,7 +153,7 @@ main {
 
 /*grid*/
 *{
-    
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
@@ -162,6 +162,7 @@ main {
 .wrapper {
     display: grid;
     border-style: solid;
+    border-color: red;
     grid-gap: 10px;
   
    
@@ -249,10 +250,10 @@ main {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 1em;
+    margin: 0.2em;
 }
 
-./*content1 img {
+.content1 img {
     border: #3d3d3d;
     border-color: #3d3d3d;
     border-width: 100px;
@@ -263,7 +264,7 @@ img {
     display: block;
     max-width: 100%;
     align-content: center;
-}*/
+}
 
 #content2 {
 
@@ -271,7 +272,7 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 1em;
+    margin: 0.2em;
 }
 
 #content3 {
@@ -280,7 +281,7 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 1em;
+    margin: 0.2em;
 }
 
 #content4 {
@@ -288,11 +289,11 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 1em;
+    margin: 0.2em;
 }
 
 footer {
-    background: forestgreen;
+    background: #a3e4db;
     grid-area: footer;
 }
 
