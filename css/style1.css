@@ -64,7 +64,7 @@ FONTS
 
 :root {
     --clr-text:#3d3d3d;
-    --clr-primary: #32CD32;
+    --clr-primary: forestgreen;
     --clr-accent: #00BFFF;
 
     --ff-title: "BFNarrow", sans-serif;
@@ -88,6 +88,11 @@ p {
     margin: 0;
 }
 
+h1 {
+    font-family: var(--ff-title);
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
 h2,
 h3 {
     font-family: var(--ff-title);
@@ -134,7 +139,7 @@ main {
 }
 
 #contents {
-    color: #32CD32;
+    color: var(--clr-primary);
     text-align: center;
     padding: 1em;
 
@@ -149,7 +154,17 @@ main {
     font-size: 3rem;
 }
 
+#cotiza h3 {
+    color: white;
+    padding: 2%;
+    padding-left: 0;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
 
+footer {
+    color: white;
+}
 
 /*grid*/
 *{
@@ -161,17 +176,20 @@ main {
     
 .wrapper {
     display: grid;
+    border: 0;
     border-style: solid;
-    border-color: red;
+    border-color: white;
     grid-gap: 10px;
   
    
     grid-template-areas: 
         "nav nav nav nav"
-        "main main main hero"
+        "hero hero hero hero"
+        "main main main main"
         "contents contents contents contents"
         "content1 content1 content2 content2"
         "content3 content3 content4 content4"
+        "form2 form2 form2 form2"
         "footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -181,7 +199,7 @@ main {
 
 
 nav {
-    background-image: url(../img/Victoria\ 1\ 1024x575.jpg);
+    
     grid-area: nav;
    
 
@@ -195,7 +213,7 @@ nav {
 nav ul {
 
     display: flex;
-    color: white;
+    color: forestgreen;
     font-size: 25px;
     align-items: center;
     list-style: none;
@@ -222,7 +240,7 @@ nav a {
 
 
 main {
-    background: rgb(14, 154, 201);
+    background: deepskyblue;
     grid-area: main;
 }
 
@@ -250,7 +268,7 @@ main {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 0.2em;
+    margin: 0.8rem;
 }
 
 .content1 img {
@@ -272,7 +290,7 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 0.2em;
+    margin: 0.8rem;
 }
 
 #content3 {
@@ -281,7 +299,7 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 0.2em;
+    margin: 0.8rem;
 }
 
 #content4 {
@@ -289,11 +307,14 @@ img {
     border-radius: 0.35em;
     overflow: hidden;
     box-shadow: 0 0 1em rgb(0,0,0,0.2);
-    margin: 0.2em;
+    margin: 0.8rem;
 }
 
+
+
+
 footer {
-    background: #a3e4db;
+    background: forestgreen;
     grid-area: footer;
 }
 
@@ -308,6 +329,7 @@ footer {
         "content2"
         "content3"
         "content4"
+        "form2"
         "footer";
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -324,5 +346,55 @@ footer {
 
 
 
+.cotiza .nav-tabs .nav-link:hover{
+    border: none;
+    border-width: 50%;
+}
+.text-align{
+    margin-top: 0%;
+    margin-bottom: 0%;
 
+    padding: 0%;
+    margin-left: 0%;
+}
+.form-new{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.cotiza-heading{
+   
+    color: #e9ecef;
+    text-align: center;
+}
+.cotiza-heading h1{
+    /*margin-left: 21%;
+    margin-bottom: 10%;*/
+    color: #e9ecef;
+}
+
+.cotiza {
+    background: -webkit-linear-gradient(left, forestgreen, deepskyblue);
+    margin-top: 3%;
+    padding: 3%;
+    grid-area: form2;
+   /* border-radius: 2.5rem;*/
+}
+
+.form-group input {
+    width: 100%;
+}
+
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #03612e;
+    border: none;
+    cursor: pointer;
+    margin-right: 15%;
+    color: rgb(246, 246, 252);
+    margin-top: 4%;
+}
     
