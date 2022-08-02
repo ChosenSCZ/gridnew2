@@ -126,37 +126,37 @@ nav ul {
 
 
 main {
-    margin: 0;
-    padding: 0;
+
     color: white;
 }
 
-main about-us {
-    
-    padding: 5em;
+.about-us {
+    padding-block: 5rem;
 }
 #about-us h2 {
     text-align: center;
-    
+    padding: 10px;
     font-size: 4rem;
 }
 
 #about-us p {
     text-align: center;
-    
+    padding: 40px;
     font-size: 2rem;
 }
-/*#about-vr h2 {
+#about-vr h2 {
     
     padding: 10px;
-  
-}*/
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 
 #about-vr p {
     text-justify: distribute;
     font-size: 1.5rem;
-    
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .section-title-small {
     text-justify: distribute;
@@ -288,7 +288,7 @@ main {
     grid-area: main;
     display: flex;
     flex-direction: row;
-
+    padding: 2em;
 }
 
 #hero {
@@ -417,7 +417,7 @@ footer a {
 }
 
 .social-link {
-    
+    display: flexbox;
     margin: 5px;
     justify-items: center;
 }
