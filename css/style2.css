@@ -173,7 +173,7 @@ main {
 }
 
 #contents p {
-    padding: 4em;
+    
     font-size: 1.5rem;
     justify-content: center;
 }
@@ -219,6 +219,7 @@ footer {
         "hero hero hero hero"
         "main main main main"
         "contents contents contents contents"
+        "container container container container"
         "content1 content1 content2 content2"
         "content3 content3 content4 content4"
         ". form2 form2 ."
@@ -288,7 +289,7 @@ main {
     grid-area: main;
     display: flex;
     flex-direction: row;
-    padding: 2em;
+    padding: 1em;
 }
 
 #hero {
@@ -444,6 +445,7 @@ footer a {
         "hero"
         "main"
         "contents"
+        "container"
         "content1"
         "content2"
         "content3"
@@ -524,3 +526,60 @@ footer a {
     margin-top: 4%;
 }
     
+.container {
+   
+    display: flex;
+    grid-area: container;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 500px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 1em rgb(0,0,0,0.2);
+    text-align: center;
+}
+
+.card-image {
+    
+    height: 300px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-1 {
+    background-image: url(../img/Victoria\ 1\ 1024x575.jpg);
+}
+
+.project-2 {
+    background-image: url(../img/Victoria\ 2.1\ 1024X575.jpg);
+}
+
+.project-3 {
+    background-image: url(../img/Victoria\ 3\ 1024X575-1.jpg);
+}
+
+.project-4 {
+    background-image: url(../img/Victoria\ 4\ 1024x575.jpg);
+}
+
+.card h2 {
+    padding: 10px;
+    
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: #3d3d3d;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+    
+}
