@@ -366,6 +366,10 @@ img {
 
 
 footer {
+    box-sizing: border-box;
+    border: 0;
+    border-style: solid;
+    border-color: white;
     background: #333;
     background-size: cover;
     grid-area: footer;
@@ -375,7 +379,7 @@ footer {
 
 
 footer a {
-    color: inherit;
+   
     text-transform: uppercase;
 }
 
