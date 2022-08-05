@@ -427,7 +427,7 @@ footer a {
 }
 
 .social-link {
-    display: flexbox;
+    display: flex;
    
     justify-items: center;
 }
