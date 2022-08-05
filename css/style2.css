@@ -125,14 +125,14 @@ nav ul {
 }
 
 
-main {
+.about {
 
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.about-us {
-    padding-block: 5rem;
-}
+/*.about-us {
+    padding-block: 2rem;
+}*/
 #about-us h2 {
     text-align: center;
     padding: 10px;
@@ -141,8 +141,9 @@ main {
 
 #about-us p {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     font-size: 2rem;
+    align-self: center;
 }
 #about-vr h2 {
     
@@ -168,14 +169,16 @@ main {
 #contents {
     color: var(--clr-primary);
     text-align: center;
-    padding: 1em;
+    padding: 2em;
+    
 
 }
 
 #contents p {
-    
+    margin: 1em;
     font-size: 1.5rem;
-    justify-content: center;
+    text-align: distribute;
+    text-justify: distribute;
 }
 
 #content1 h3, #content2 h3, #content3 h3, #content4 h3 {
@@ -284,23 +287,27 @@ nav a:hover {
     color: var(--clr-accent);
 }
 
-main {
+.about {
     background: deepskyblue;
     grid-area: main;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 1em;
+    
 }
 
+
+
 #hero {
+    
     background-color: #666;
     background-image: url(../img/casa3.jpg);
     background-blend-mode: multiply;
-  background-attachment: fixed;
+    background-attachment: fixed;
     background-size:cover;
     color: white;
     text-align: center;
-    padding: 25vh 1em;
+    padding: 30vh 1em;
     grid-area: hero;
 }
 
@@ -438,7 +445,7 @@ footer a {
 }
 
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 750px) {
     .wrapper {
     grid-template-areas: 
         "nav"
@@ -462,9 +469,22 @@ footer a {
         flex-direction: column;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
+
+
+}
+
+@media only screen and (min-width: 750px) {
+    section {
+        padding: 6em 2em;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .about-us,
+    .about-vr {
+        flex: 0 1 50%;
     }
 
 
