@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/style2.css">
     <title>VR Urbanizaciones</title>
     <link rel="icon" href="../VicRen/img/LOGO COMBINADO (1).ico">
@@ -98,64 +99,90 @@
     
 
 
-<div class="container cotiza" id="cotiza">
-    <div class="row">
-        <div class="col-md-12">
-                <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <h1 class="cotiza-heading">Cotiza aqui</h1>
-                    <div class="row cotiza-form">
-                        <div class="col-md-12">
-                            <form method="post" autocomplete="off" name="google-sheet">
-                                <div class="form-group">
-                                    <h3 class="form-name">Nombre Completo <span>(*)</span></h3>
-                                    <input type="text" name="Name" class="form-control" placeholder="Nombre Completo *" value="" required=""/>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-mail">Correo Electronico</h3>
-                                    <input type="text" name="email" class="form-control" placeholder="Correo Electronico" value=""/>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-phone">Telefono <span>(*)</span></h3>
-                                    <input type="number" name="Phone" class="form-control" placeholder="Telefono" value="" required=""/>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-birthday">Fecha de cumpleaños <span>(*)</span></h3>
-                                    <input type="date" name="birthday_date" class="form-control"
-                                    placeholder="Fecha de cumpleaños" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-                                    required="">
+        <div class="container cotiza" id="cotiza">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h1 class="cotiza-heading">Cotiza aqui</h1>
+                        <div class="row cotiza-form">
+                            <div class="col-md-12">
+                                <form method="post" autocomplete="off" name="google-sheet">
+                                    <div class="form-group">
+                                        <h3 class="form-name">Nombre Completo <span>(*)</span></h3>
+                                        <input type="text" name="name" class="form-control" placeholder="Nombre Completo *" value="" required=""/>
                                     </div>
-                                <div class="form-group">
-                                    <h3 class="form-resident">Lugar de Residencia <span>(*)</span></h3>
-                                    <input type="text" name="place" class="form-control" placeholder="Lugar de Residencia" value="" required=""/>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-content-interest">Proyecto de Interes <span>(*)</span></h3>
-                                    <select name="form_fields[select_cotizarAqui]" id="form-field-select_cotizarAqui"
-                                        class="form-control" required="required"
-                                        aria-required="true" control-id="ControlID-5">
-                                        <option value="Victoria 1">Victoria 1</option>
-                                        <option value="El Recreo-Victoria 2">El Recreo-Victoria 2</option>
-                                        <option value="Tipoy-Victoria 3">Tipoy-Victoria 3</option>
-                                        <option value="El Chaco de Paurito-Victoria 4">El Chaco de Paurito-Victoria 4</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <h3 class="form-message">Mensaje <span>(*)</span></h3>
-                                    <textarea type="text" name="message" class="form-control" placeholder="Escriba aqui..." value="" required=""></textarea>
-                                </div>
-
+                                    <div class="form-group">
+                                        <h3 class="form-mail">Correo Electronico</h3>
+                                        <input type="text" name="email" class="form-control" placeholder="Correo Electronico" value=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="form-phone">Telefono <span>(*)</span></h3>
+                                        <input type="number" name="phone" class="form-control" placeholder="Telefono" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="form-birthday">Fecha de cumpleaños <span>(*)</span></h3>
+                                        <input type="date" name="birthday" class="form-control"
+                                        placeholder="Fecha de cumpleaños" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                                        required="">
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="form-resident">Lugar de Residencia <span>(*)</span></h3>
+                                        <input type="text" name="place" class="form-control" placeholder="Lugar de Residencia" value="" required=""/>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="form-content-interest">Proyecto de Interes <span>(*)</span></h3>
+                                        <select name="project" id="form-field-select_cotizarAqui"
+                                            class="form-control" required="required"
+                                            aria-required="true" control-id="ControlID-5">
+                                            <option value="Victoria 1">Victoria 1</option>
+                                            <option value="El Recreo-Victoria 2">El Recreo-Victoria 2</option>
+                                            <option value="Tipoy-Victoria 3">Tipoy-Victoria 3</option>
+                                            <option value="El Chaco de Paurito-Victoria 4">El Chaco de Paurito-Victoria 4</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <h3 class="form-message">Mensaje <span>(*)</span></h3>
+                                        <textarea type="text" name="message" class="form-control" placeholder="Escriba aqui..." value="" required=""></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" name="submit" class="btnSubmit btn-block" value="Enviar" />
+                                    </div>
+                                </form>
                             </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" name="submit" class="btnSubmit btn-block" value="Enviar" />
-                                </div>
-                            </form>
-                        </div>
+                        </div>        
                     </div>
                 </div>
+            </div>
         </div>
-    </div>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyjINNVA0uM3Q038nkgNXvVMQkN891Mv1VvTj0b6SCjnOwWYAQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
@@ -192,12 +219,12 @@
                 </li>
                 <li><a class="social-link" href="https://wa.me/message/3ZLWBAJM5NEEL1"><img class="social-icon" src="../gridnew2/img/icons8-whatsapp-96.png" alt="" aria-label="whatsapp"/></a></li>
             </ul>
-
+        </div>
     </section>
 
 
-    </div>
+    
 </footer>
-</div>
+
 
 </html>
